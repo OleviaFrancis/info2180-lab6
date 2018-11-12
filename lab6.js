@@ -5,12 +5,14 @@ window.onload = function() {
         console.log('Button Clicked')
         
     var httpRequest = new XMLHttpRequest();
-    var url = "request.php?q=definition";
+    var r  = document.getElementById("textBox");
+    var url = "request.php?q="+ r.value;
     httpRequest.onreadystatechange = function(){
         if (httpRequest.readyState === XMLHttpRequest.DONE) {
          if (httpRequest.status === 200) {
             var response = httpRequest.responseText;
-            alert(response);
+                document.getElementById("Result").innerHTML=response;
+           
             } else {
             alert('There was a problem with the request.');
             }
