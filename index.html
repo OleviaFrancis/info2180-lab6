@@ -4,16 +4,35 @@
         <title>
              Lab 6
         </title>
+        
+        <style>
+            header {
+	           background-color: #800020;
+	           color: #FFFFFF;
+	           text-align: center;
+	           padding: 4rem;
+            }
+            body {
+                font-size: 18px;
+	            font-family: Georgia, Arial, sans-serif;
+	           padding: 25px 50px
+            }
+        </style>
+        
        <script src = "lab6.js"></script>
     </head>
+    
     <body>
-        <header>Web dictionary</header> <br>
+        <header>
+            <h1>Web dictionary</h1>
+        </header> <br>
         </header>
+        <p>Look up the definition of words (eg. ajax, html, bar, php, javascript, or css)</p>
         <form>
             <input id="textBox" input type="text" name="definition">
         </form><br>
         <button id = "searchbutton">Search</button>
-        <button id = "defbutton">Get All Definitions</button>
+        <button id = "defbutton">Get All Definitions</button><hr>
         <h3>Results</h3>
         <div id= "Result">Your results will be displayed here.</div>
     </body>

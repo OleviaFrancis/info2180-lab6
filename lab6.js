@@ -2,7 +2,7 @@ window.onload = function() {
     var text = document.getElementById(text);
     var searchbutton = document.getElementById("searchbutton");
     searchbutton.onclick = function() {
-        console.log('Searcg button Clicked')
+        console.log('Search button Clicked')
         var httpRequest = new XMLHttpRequest();
         var r  = document.getElementById("textBox");
         var url = "request.php?q="+ r.value;
