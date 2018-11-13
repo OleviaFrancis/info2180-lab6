@@ -2,12 +2,11 @@ window.onload = function() {
     var text = document.getElementById(text);
     var searchbutton = document.getElementById("searchbutton");
     searchbutton.onclick = function() {
-        console.log('Button Clicked')
-        
-    var httpRequest = new XMLHttpRequest();
-    var r  = document.getElementById("textBox");
-    var url = "request.php?q="+ r.value;
-    httpRequest.onreadystatechange = function(){
+        console.log('Searcg button Clicked')
+        var httpRequest = new XMLHttpRequest();
+        var r  = document.getElementById("textBox");
+        var url = "request.php?q="+ r.value;
+        httpRequest.onreadystatechange = function(){
         if (httpRequest.readyState === XMLHttpRequest.DONE) {
          if (httpRequest.status === 200) {
             var response = httpRequest.responseText;
@@ -17,14 +16,18 @@ window.onload = function() {
             alert('There was a problem with the request.');
             }
         } 
-    };
+        };
             
-    httpRequest.open('GET', url);
-    httpRequest.send();
-    
+        httpRequest.open('GET', url);
+        httpRequest.send();
     };
+    
     console.log(searchbutton)
     
+    defbutton.onclick = function() {
+        console.log('Get Definition button clicked')
+        
+    };
     
 };
 
