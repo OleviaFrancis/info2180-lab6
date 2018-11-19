@@ -14,7 +14,7 @@ $xmldata = '<?xml version="1.0" encoding="UTF-8"?>
         A place that sells alcholic beverages.
     </definition>
     <definition name = "ajax">
-        <p>Technique which involves the use of javascript and xml (or JSON).</p>
+        Technique which involves the use of javascript and xml (or JSON).
     </definition>
     <definition name = "html">
         The standard markup language for creating web pages and web applications.
